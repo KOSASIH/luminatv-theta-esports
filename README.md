@@ -10,13 +10,13 @@ Welcome to the LuminaTV project repository! This project contains the source cod
 To get started with the project, follow these steps:
 
 1. Clone the repository:
-`git clone https://github.com/KOSASIH/luminatv-theta-esports.git`
+`1. git clone https://github.com/KOSASIH/luminatv-theta-esports.git`
 
 2. Install the required dependencies:
-`pip install -r requirements.txt`
+`1. pip install -r requirements.txt`
 
 3. Run the project:
-`python main.py`
+`1. python main.py`
 
 # Project Structure
 
