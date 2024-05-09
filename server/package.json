@@ -1,0 +1,54 @@
+{
+  "name": "luminatv-theta-esports-server",
+  "version": "1.0.0",
+  "description": "Serverless API for Luminatv Theta Esports",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "sls offline start",
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "deploy": "sls deploy"
+  },
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.85",
+    "@types/node": "^16.11.12",
+    "aws-sdk": "^2.1085.0",
+    "serverless-http": "^2.11.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "eslint": "^7.32.0",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1",
+    "serverless": "^2.68.0",
+    "typescript": "^4.5.4"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.+(ts|tsx|js)",
+      "**/?(*.)+(spec|test).+(ts|tsx|js)"
+    ],
+    "testEnvironment": "node"
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "rules": {
+      "import/extensions": "off",
+      "import/no-unresolved": "off",
+      "no-console": "off",
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": ["error"],
+      "@typescript-eslint/no-explicit-any": "off"
+    }
+  }
+}
